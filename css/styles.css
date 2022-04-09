@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* roots */
+:root{
+    --text-color: #595959;
+    --text-font: 'Work Sans', sans-serif;
+    --line-height: 19px;
+    --radius: 0.5rem;
+}
+
+h1, h4, p{
+    font-family: var(--text-font);
+}
+
+h1, h4{
+    font-weight: 600;
+}
+h1{
+    font-size: 1.625rem;
+}
+h4{
+    font-size: 0.875rem;
+}
+p{
+    font-size: 0.875rem;
+    color: var(--text-color)
+}
+
+
+/* Global Styles */
+
+.btn{
+    font-family: var(--text-font);
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.875rem 1.5rem;
+    background: #2355F2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: var(--radius);
+}
+
+#main{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+@media screen and (min-width:431px){
+    #main{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-image: url("../Assets/Background.png");
+        background-size: cover;
+    }
+}
+/*
+=============== 
+Newsletter
+===============
+*/
+
+#newsletter{
+    width: 100%;
+    max-width: 430px;
+    background: #FFFFFF;
+}
+.newsletter-heading{
+    background-image: url("../Assets/Pattern.png");
+    background-color: #2355F2;
+    padding: 3.5rem 0;
+    display: grid;
+    justify-content: center;
+}
+.newsletter-heading h1{
+    max-width: 310px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.newsletter-info{
+    padding: 1.5rem 0;
+    width: 92%;
+    max-width: 382px;
+    margin: 0 auto;
+    display: grid;
+}
+.newsletter-info-title{
+    text-align: center;
+    line-height: var(--line-height);
+    margin-bottom: 1.5rem;
+}
+.newsletter-form{
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2.125rem;
+}
+.form-row{
+    display: grid;
+    grid-template-columns: 69% 1fr;
+    gap: 0.5rem;
+}
+.form-input{
+    background: #F5F7FA;
+    padding: 0.875rem 1.125rem;
+    outline: transparent;
+    border: solid 1px #E6E8F0;
+    border-radius: var(--radius);
+    font-family: var(--text-font);
+}
+.form-input::placeholder{
+    color: #B3B7C5;
+}
+.form-text{
+    color: #A6A6A6;
+}
+.newsletter-profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.125rem;
+    justify-self: center;
+}
+.newsletter-review{
+    text-align: center;
+    
+}
